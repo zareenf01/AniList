@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Inter:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Inclusive Sans", sans-serif;
+  font-family: "Inter", sans-serif;
+}
+html {
+  height: 100%;
+}
+body {
+  background-color: #1e1e1e;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.scrollbar {
+  scrollbar-width: auto;
+  scrollbar-color: #0d9b4d #323232; /* thumb color track color */
+}
+
+/* Styles for the scrollbar thumb (handle) */
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #0d9b4d; /* Thumb color */
+  border-radius: 6px; /* Rounded corners for the thumb */
+}
+
+/* Styles for the scrollbar track (the area the thumb moves on) */
+.scrollbar::-webkit-scrollbar-track {
+  background-color: #323232; /* Track color */
+}
