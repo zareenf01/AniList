@@ -223,7 +223,7 @@ function Home() {
         </div>
         <div className="div items-center flex">
           <Link to="/favs">
-            <button className="p-3   bg-[#3e3e3e] rounded-full mx-5 hidden md:flex">
+            <button className="p-3 bg-[#3e3e3e] rounded-full mx-5 hidden md:flex">
               <img src="/redH.png" alt="" className="w-6" />
             </button>
           </Link>

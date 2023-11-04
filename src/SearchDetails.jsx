@@ -84,18 +84,24 @@ function SearchDetails() {
               alt=""
               className=" mx-1 cursor-pointer md:flex"
             />
+
+            <Link to="/favs">
+              <button className="w-60 p-2  bg-[#3e3e3e] rounded-full mx-5 md:hidden">
+                <img src="/redH.png" alt="" className="w-full" />
+              </button>
+            </Link>
           </div>
 
           <div className="div items-center flex">
             <Link to="/favs">
-              <button className="p-3 bg-[#3e3e3e] rounded-full mx-5">
+              <button className="p-3 bg-[#3e3e3e] rounded-full mx-5 hidden md:flex">
                 <img src="/redH.png" alt="" />
               </button>
             </Link>
             <input
               type="search"
               placeholder="search your anime"
-              className="focus:outline-none p-3 rounded-md mt-5 md:mt-0"
+              className="focus:outline-none p-3 w-full md:w-fit rounded-md mt-5 md:mt-0"
               value={search}
               onChange={(e) => setSearch(e.target.value)}
             />
