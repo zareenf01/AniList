@@ -189,7 +189,7 @@ function Home() {
               className="w-28 mr-8 md:w-32 md-mr-12"
             />
           </Link>
-          <h2 className="font-semibold mt-3 text-xl text-[#5c5c5c]">
+          <h2 className="font-semibold mt-3 text-md md:text-xl text-[#5c5c5c]">
             Join <br />
             Now
           </h2>
@@ -197,7 +197,7 @@ function Home() {
           <img
             src="/discord.png"
             alt=""
-            className="  ml-10 cursor-pointer md:flex"
+            className="  ml-3 cursor-pointer md:flex md:10"
           />
           <img
             src="/telegram.png"
@@ -214,17 +214,23 @@ function Home() {
             alt=""
             className=" mx-1 cursor-pointer md:flex"
           />
+
+          <Link to="/favs">
+            <button className="w-60 p-2  bg-[#3e3e3e] rounded-full mx-5 md:hidden">
+              <img src="/redH.png" alt="" className="w-full" />
+            </button>
+          </Link>
         </div>
         <div className="div items-center flex">
           <Link to="/favs">
-            <button className="p-3 bg-[#3e3e3e] rounded-full mx-5">
-              <img src="/redH.png" alt="" />
+            <button className="p-3   bg-[#3e3e3e] rounded-full mx-5 hidden md:flex">
+              <img src="/redH.png" alt="" className="w-6" />
             </button>
           </Link>
           <input
             type="search"
             placeholder="search your anime"
-            className="focus:outline-none p-3 rounded-md mt-5 md:mt-0"
+            className="focus:outline-none w-full md:w-fit p-3 rounded-md mt-5 md:mt-0"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />

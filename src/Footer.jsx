@@ -13,7 +13,7 @@ export default function Footer() {
         <img
           src="/discord.png"
           alt=""
-          className="  ml-8 cursor-pointer md:flex"
+          className="-ml-5  md:ml-8 cursor-pointer md:flex"
         />
         <img
           src="/telegram.png"
