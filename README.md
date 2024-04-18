@@ -21,10 +21,10 @@ AniList is a website dedicated to anime enthusiasts, it is a React-based anime w
 
 
 ## Tools Used
-- **React.js:** [React.js](https://reactjs.org/)
-- **Tailwind CSS:** [Tailwind CSS](https://tailwindcss.com/)
-- **Jikan API:** [Jikan API](https://jikan.moe/)
-- **Vite:** [Vite](https://vitejs.dev/)
+- [React.js](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Jikan API](https://jikan.moe/)
+- [Vite](https://vitejs.dev/)
 
 
 ## Getting Started
