@@ -28,13 +28,13 @@ function SearchDetails() {
   const addFav = () => {
     setFav((state) => !state);
     if (isAnimeInFavorites) {
-      // If it's already in fav remove it
+      // remove 
       const updatedFavorites = favorites.filter(
         (favorite) => favorite.mal_id !== anime.mal_id
       );
       setFavorites(updatedFavorites);
     } else {
-      // If it's not in fav add it
+      // add
       const newFavorite = {
         id: anime.mal_id,
         image: anime.images.jpg.large_image_url,

@@ -14,6 +14,7 @@ import CardSkeleton from "./Card-skeleton";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Link } from "react-router-dom";
+import Carousel from "./Carousel";
 
 const AnimeContext = createContext();
 
@@ -22,6 +23,8 @@ const AnimeProvider = ({ children }) => {
   const [searchResult, setSearchResult] = useState([]);
 
   const [topAir, setTopAir] = useState();
+
+  const[info, setInfo] = useState();
 
   const [reviews, setReviews] = useState();
 
@@ -44,11 +47,11 @@ const AnimeProvider = ({ children }) => {
   };
   //Top Airinggggg
   const getTopAir = async () => {
-    const response = await fetch(`https://kitsu.io/api/edge/trending/anime`);
+    const response = await fetch(`https://zareen-anime-api.vercel.app/anime/zoro/top-airing`);
 
     const topAirData = await response.json();
     // console.log(topAirData.data);
-    setTopAir(topAirData.data);
+    setTopAir(topAirData.results);
   };
 
   //Latest Episodddeees
@@ -263,6 +266,8 @@ function Home() {
         </div>
       ) : (
         <div className="m-3 p-3">
+<Carousel />
+
           <h1 className="text-3xl mt-10 md:mt-20 -mb-16 text-[#249d5a] font-semibold">
             Top Airing
           </h1>

@@ -13,14 +13,16 @@ const List = () => {
     <>
       <div className="p-3 mt-10 -ml-10 flex overflow-x-auto overflow-y-hidden">
         {firstTenList.map((anime, index) => {
-          const coverImg = anime.attributes?.posterImage?.large || "";
+          // const coverImg = anime.attributes?.posterImage?.large || "";
+          const coverImg = anime.image|| "";
           return (
             <Link to={`/details/${anime.id}`} key={index}>
               <div className="flex flex-col m-3 p-3 w-64 h-96" key={index}>
                 <img src={coverImg} alt="" className="h-72" />
                 <h1 className="text-white text-center text-lg mt-2 font-semibold">
-                  {anime.attributes?.titles?.en ||
-                    anime.attributes.titles.en_jp}
+                  {/* {anime.attributes?.titles?.en ||
+                    anime.attributes.titles.en_jp} */}
+                    {anime.title || anime.japaneseTitle}
                 </h1>
               </div>
             </Link>
