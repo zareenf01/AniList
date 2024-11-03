@@ -189,7 +189,7 @@ function Home() {
               className="w-28 mr-8 md:w-32 md-mr-12"
             />
           </Link>
-          <h2 className="font-semibold mt-3 text-md md:text-xl text-[#5c5c5c]">
+          <h2 className="font-semibold mt-3 hidden md:block text-md md:text-xl text-[#5c5c5c]">
             Join <br />
             Now
           </h2>
@@ -245,6 +245,7 @@ function Home() {
                 <Link to={`/searchD/${anime.mal_id}`}>
                   <div className="flex flex-col relative">
                     <div className="relative">
+                    {isLoading && <CardSkeleton cards={10} />}
                       <img
                         src={anime.images.jpg.large_image_url}
                         alt=""
@@ -262,21 +263,24 @@ function Home() {
         </div>
       ) : (
         <div className="m-3 p-3">
-          <h1 className="text-3xl mt-20 -mb-16 text-[#249d5a] font-semibold">
+          <h1 className="text-3xl mt-10 md:mt-20 -mb-16 text-[#249d5a] font-semibold">
             Top Airing
           </h1>
-          <div className="m-5 p5 flex w-full overflow-x-scroll">
+          <div className="m-3 p5 flex w-full overflow-x-scroll">
             <div className="flex">
               {isLoading && <CardSkeleton cards={10} />}
               <List />
             </div>
           </div>
 
-          <div className="overflow-x-scroll overflow-y-hidden -mx-12 bg-[#323232]">
+          <button className="bg-[#0d9b4d] text-md text-center font-semibold p-2 px-3 rounded-full -ml-5 -mt-6">
+        Newest Comment
+      </button>
+          <div className="overflow-x-scroll overflow-y-hidden -mx-12 md:-mx-0 md:w-full">
             <Comment />
           </div>
 
-          <div className="m-5 p-5  w-full ">
+          <div className=" md:p-5  w-full ">
             <Latest />
           </div>
 

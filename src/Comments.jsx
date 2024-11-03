@@ -7,14 +7,11 @@ export default function () {
 
   const firstTen = reviews ? reviews.slice(0, 10) : [];
   return (
-    <div className="bg-[#323232] p-3 m-3 mt-20">
-      <button className="bg-[#0d9b4d] text-md text-center font-semibold p-2 px-3 rounded-full mx-3 m-3 -mt-6">
-        Newest Comment
-      </button>
-      <div className="p-3 m-3 flex bg-[#323232]">
+    <div className="bg-[#000] p-3 md:px-0">
+      <div className="pt-5 p-2 md:px-0 flex ">
         {firstTen.map((comments, index) => (
           <div
-            className=" bg-[#4a4a4a] p-3 m-3 h-72 rounded cursor-grab"
+            className=" bg-[#1a1a1a] p-2 m-3 h-72 rounded-lg max-w-xs md:max-w-none cursor-grab"
             key={index}
           >
             <div className="flex items-center mx-3">
@@ -28,7 +25,7 @@ export default function () {
               </h2>
             </div>
             <div className="mx-3 m-3 mt-3">
-              <p className=" font-medium text-sm text-center w-96 max-h-32 overflow-y-scroll text-white cursor-pointer">
+              <p className=" font-medium text-sm text-center w-72 md:w-96 max-h-32 overflow-y-scroll text-white cursor-pointer">
                 {comments.review}
               </p>
             </div>

@@ -7,10 +7,10 @@ export default function Latest() {
   const firstTenList = latest ? latest.slice(0, 12) : [];
   return (
     <>
-      <h1 className="text-3xl mt-20 ml-8 -mb-8 text-[#249d5a] font-semibold m-3">
+      <h1 className="text-3xl mt-10 md:mt-20 ml-8 -mb-8 text-[#249d5a] font-semibold m-3">
         Latest Episodes
       </h1>
-      <div className="m-5 p-5 mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="-mx-5 md:mx-5 md:p-5 mt-16 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-10">
         {firstTenList.map((anime, index) => {
           return (
             <div className="flex flex-col relative" key={index}>

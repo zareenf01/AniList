@@ -8,6 +8,7 @@ function SearchDetails() {
   const { searchResultId } = useParams();
 
   const animeID = Number(searchResultId);
+  console.log("anime id:", animeID);
 
   const anime =
     searchResult && searchResult.find((anime) => anime.mal_id == animeID);

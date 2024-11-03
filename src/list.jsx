@@ -11,7 +11,7 @@ const List = () => {
 
   return (
     <>
-      <div className="m-5 p-5 mt-10 -ml-10 flex overflow-x-auto overflow-y-hidden">
+      <div className="p-3 mt-10 -ml-10 flex overflow-x-auto overflow-y-hidden">
         {firstTenList.map((anime, index) => {
           const coverImg = anime.attributes?.posterImage?.large || "";
           return (

@@ -9,11 +9,11 @@ export default function Genres() {
       <h1 className="text-3xl hidden sm:flex -mt-6 mb-5 text-[#249d5a] font-semibold m-3 ">
         Genres
       </h1>
-      <div className="bg-[#393939] p-5 m-1 min-w-full max-w-6xl  hidden sm:grid grid-cols-2 md:grid-cols-3 gap-5 w-full mx-auto md:w-80 md:-mr-6">
+      <div className="bg-[#191919] p-5 m-1 min-w-full max-w-6xl  hidden sm:grid grid-cols-2 md:grid-cols-3 gap-5 w-full mx-auto md:w-80 md:-mr-6">
         {firstTenList.map((anime, index) => {
           return (
             <div className="text-lg p-1" key={index}>
-              <h2 className="font-semibold p-2 text-white hover:bg-[#676767] rounded-md w-full hover:cursor-pointer">
+              <h2 className="font-semibold p-2 text-white hover:bg-[#4e4e4e] rounded-md w-full hover:cursor-pointer">
                 {anime.name}
               </h2>
             </div>

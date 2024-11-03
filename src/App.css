@@ -10,32 +10,44 @@ html {
   height: 100%;
 }
 body {
-  background-color: #1e1e1e;
+  background-color: #000000;
   overflow-x: hidden;
   height: 100%;
 }
 
 .overflow-x-scroll {
   overflow-x: auto;
-  /* white-space: nowrap; */
-  scrollbar-width: thin;
-  scrollbar-color: #359565 #55b77a;
+
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .overflow-x-scroll::-webkit-scrollbar {
-  width: 6px;
-  height: 10px;
+  height: 0px;
+  width: 10%;
+  margin-left: 35%;
+  margin-right: 35%;
 }
 
 .overflow-x-scroll::-webkit-scrollbar-track {
-  background: none;
+  margin-inline: 35%; 
+  background: rgba(85, 85, 85, 0.1);
+  border-radius: 6px;
 }
 
+
 .overflow-x-scroll::-webkit-scrollbar-thumb {
-  background: #7a7a7ac8;
+  background: #242424c8;
   border-radius: 6px;
+  border: none;
+  min-width: 20px; 
+  max-width: 20px; 
 }
 
 .overflow-x-scroll::-webkit-scrollbar-thumb:hover {
   background: #555555;
+}
+
+.overflow-y-scroll::-webkit-scrollbar{
+width: 0px;
 }

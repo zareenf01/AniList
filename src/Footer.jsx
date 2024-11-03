@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <div className="p-3 m-3 mt-28">
+    <div className="p-3 m-3 mt-24">
       <div className="flex items-center -mx-12 border-b border-[#606060] pb-8">
         <img
           src="/logo.png"
