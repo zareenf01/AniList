@@ -265,13 +265,16 @@ function Home() {
           })}
         </div>
       ) : (
-        <div className="m-3 p-3">
+        <div >
+          <div className="m-3 p-3">
 <Carousel />
+</div>
 
-          <h1 className="text-3xl mt-10 md:mt-20 -mb-16 text-[#249d5a] font-semibold">
+<div className="m-3 p-3">
+          <h1 className="text-3xl -mx-3 md:-mx-0 mt-16 md:mt-20 -mb-12 text-[#249d5a] font-semibold">
             Top Airing
           </h1>
-          <div className="m-3 p5 flex w-full overflow-x-scroll">
+          <div className="-mx-3  md:m-3 flex w-full overflow-x-scroll">
             <div className="flex">
               {isLoading && <CardSkeleton cards={10} />}
               <List />
@@ -301,8 +304,10 @@ function Home() {
             <Footer />
           </div>
         </div>
+        </div>
       )}
     </div>
+    
   );
 }
 

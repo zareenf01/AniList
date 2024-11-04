@@ -164,7 +164,7 @@ useEffect(() => {
               alt=""
               className="h-72 max-w-60 mx-auto md:mx-0"
             />
-            <div className="flex flex-col mx-16 p-2">
+            <div className="flex flex-col md:mx-16 p-2">
               <h1 className="md:text-left text-4xl mt-5 md:mt-0 md:text-5xl md:text-[#fff] font-bold mx-auto md:mx-0 text-[#797979]">
                 {animeInfo.title}
               </h1>
